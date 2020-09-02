@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>JoKeiPô</title>
+</head>
+<body>
+    <section>
+        <header>
+            Jogo da Velha
+            <div id="placar">
+                <table>
+                    <tr><td>JOG</td><td>COMP</td></tr>
+                    <tr><td id="pontj">0</td><td id="pontc">0</td></tr>
+                </table>
+            </div>
+        </header>
+        <div id="escolha">
+            <input type="button" id="pedra" onclick="todos('pedra')">
+            <input type="button" id="papel" onclick="todos('papel')">
+            <input type="button" id="tesoura" onclick="todos('tesoura')">
+        </div>
+        <div id="resultado">
+            <img src="zpedra.png" id="jogador">
+            <span id="resul"> VS. </span>  
+            <img src="zpedra.png" id="computador">
+        </div>
+    </section>
+    <script src="novocodigo.js"></script>
+</body>
+</html>

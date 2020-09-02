@@ -1,0 +1,53 @@
+@charset "UTF-8";
+body{
+    background-color: #828689;
+}
+section{
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    height: 450px;
+    margin: 20px auto 0px auto;
+}
+header{
+    font: normal 18pt Arial;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+div#resultado{
+    background-color: rgb(230, 228, 228);
+    margin: 10px auto 0px auto;
+    width: 300px;
+    height: 170px;
+}
+table{
+    position: absolute;
+    width: 50px;
+    top: 0px;
+    left: 420px;
+    font-size: 10pt;
+    border: 1px solid black;
+}
+input{
+    outline-style: none;
+    width: 100px;
+    height: 100px;
+}
+#pedra{
+    background-image: url("zpedra.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#papel{
+    background-image: url("zpapel.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#tesoura{
+    background-image: url("ztesoura.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
