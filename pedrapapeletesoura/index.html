@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>JoKeiPô</title>
+</head>
+<body>
+    <header>
+        <h2>JoKeiPô</h2>
+    </header>
+    <section>
+        <div id="placares">
+            <div >
+                <p>JOGADOR</p>
+                <label id="placjog">0</label>
+            </div>
+            <div >
+                <p>COMPUTADOR</p>
+                <label id="placcomp">0</label>
+            </div>
+        </div>
+
+        <div id="botoes">
+            <div class="ppt">
+                <input type="button" class="pedra" onclick="jogo(0)">
+                <input type="button" class="papel" onclick="jogo(1)">
+                <input type="button" class="tesoura" onclick="jogo(2)">
+            </div>
+        </div>
+
+        <div id="jogo">
+            <div class="resultado">
+                <div class="pptjog">
+                    <img src="" id="jog">
+                </div>
+                <div>
+                    <label id="result">Análise</label>
+                </div>
+                <div class="pptcomp">
+                    <img src="" id="comp">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="cod.js"></script>
+</body>
+</html>

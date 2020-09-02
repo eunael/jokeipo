@@ -1,53 +1,78 @@
 @charset "UTF-8";
 body{
-    background-color: #828689;
-}
-section{
-    position: relative;
-    text-align: center;
-    background-color: white;
-    width: 500px;
-    height: 450px;
-    margin: 20px auto 0px auto;
+    background: #4ec2fc;
 }
 header{
-    font: normal 18pt Arial;
+    font: normal bold 20pt Arial;
     text-align: center;
-    height: 50px;
-    margin-bottom: 30px;
-    padding-top: 20px;
 }
-div#resultado{
-    background-color: rgb(230, 228, 228);
-    margin: 10px auto 0px auto;
-    width: 300px;
-    height: 170px;
+section{
+    background: #fff;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, .075) 0.075rem .125rem .25rem;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    row-gap: 10px;
 }
-table{
-    position: absolute;
-    width: 50px;
-    top: 0px;
-    left: 420px;
-    font-size: 10pt;
-    border: 1px solid black;
+div#placares{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+#placares div{
+    flex-basis: 40%;
+    text-align: center;
+}
+#placares div p{
+    color: #a8a7a7cc;
+    font: normal bold 10.15pt Arial;
+}
+#placares div label{
+    font: normal bold 20pt 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div#botoes {
+    text-align: center;
 }
 input{
     outline-style: none;
     width: 100px;
     height: 100px;
 }
-#pedra{
-    background-image: url("zpedra.png");
+.pedra{
+    background-image: url("imagens/zpedra.png");
     background-position: center;
     background-repeat: no-repeat;
 }
-#papel{
-    background-image: url("zpapel.png");
+.papel{
+    background-image: url("imagens/zpapel.png");
     background-position: center;
     background-repeat: no-repeat;
 }
-#tesoura{
-    background-image: url("ztesoura.png");
+.tesoura{
+    background-image: url("imagens/ztesoura.png");
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#jogo div.resultado{
+    background: #ccccccb6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 400px;
+    height: 120px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 10px;
+}
+.resultado div:nth-child(n){
+    text-align: center;
+}
+label#result{
+    text-transform: uppercase;
+    font: normal bold 18pt 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
