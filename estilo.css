@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body{
-    background: #000140;
     background-image: url("imagens/pptpng.png");
+    background-color: #000140be;
 }
 header{
     font: normal bold 20pt Arial;
